@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "765580233968",
+    "project_id": "technicians-8de59",
+    "storage_bucket": "technicians-8de59.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:765580233968:android:611c92cc094fd3ebcd0635",
+        "android_client_info": {
+          "package_name": "com.example.technicians"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnFQ-2zLfBykxZYDtcLBVl18Badk-vBUo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
