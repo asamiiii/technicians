@@ -37,7 +37,7 @@ class _ChocoDetailesState extends State<ChocoDetailes> {
           TextEditingController userName = TextEditingController();
           TextEditingController phone = TextEditingController();
           TextEditingController email = TextEditingController();
-          // TextEditingController age = TextEditingController();
+          TextEditingController det = TextEditingController();
 
           // TextEditingController education = TextEditingController();
 
@@ -81,155 +81,24 @@ class _ChocoDetailesState extends State<ChocoDetailes> {
                       const SizedBox(
                         height: 10,
                       ),
-                      // AppTextField(
-                      //     controller: age,
-                      //     keyboardType: TextInputType.number,
-                      //     icon: const Icon(Icons.abc),
-                      //     hintText: 'السن',
-                      //     label: 'السن'),
+                      AppTextField(
+                          controller: det,
+                          maxLines: 3,
+                          keyboardType: TextInputType.text,
+                          icon: const Icon(Icons.abc),
+                          hintText: 'تفاصيل العطل',
+                          label: 'تفاصيل العطل'),
                       const SizedBox(
                         height: 10,
                       ),
-                      // AppTextField(
-                      //     controller: education,
-                      //     keyboardType: TextInputType.text,
-                      //     icon: const Icon(Icons.abc),
-                      //     hintText: 'المؤهل الدراسي',
-                      //     label: 'المؤهل الدراسي'),
-                      // const SizedBox(
-                      //   height: 10,
-                      // ),
-                      // AppTextField(
-                      //     controller: iBanCodeController,
-                      //     keyboardType: TextInputType.text,
-                      //     icon: const Icon(Icons.abc),
-                      //     hintText: 'IBAN',
-                      //     label: 'IBAN'),
-                      // StatefulBuilder(
-                      //   builder: (context, setState) => Row(
-                      //     children: [
-                      //       const Text('Sent'),
-                      //       Checkbox(
-                      //         checkColor: Colors.white,
-                      //         // fillColor: MaterialStateProperty.resolveWith(getColor),
-                      //         value: sent,
-                      //         onChanged: (bool? value) {
-                      //           setState(() {
-                      //             sent = value!;
-                      //             debugPrint('value $value');
-                      //           });
-                      //         },
-                      //       ),
-                      //     ],
-                      //   ),
-                      // ),
-                      // StatefulBuilder(
-                      //   builder: (context, setState) => Column(
-                      //     children: <Widget>[
-                      //       ListTile(
-                      //         title: const Text('USD'),
-                      //         leading: Radio<SingingCharacter>(
-                      //           value: SingingCharacter.USD,
-                      //           groupValue: character,
-                      //           onChanged: (SingingCharacter? value) {
-                      //             setState(() {
-                      //               character = value;
-                      //             });
-                      //           },
-                      //         ),
-                      //       ),
-                      //       ListTile(
-                      //         title: const Text('EUR'),
-                      //         leading: Radio<SingingCharacter>(
-                      //           value: SingingCharacter.EUR,
-                      //           groupValue: character,
-                      //           onChanged: (SingingCharacter? value) {
-                      //             setState(() {
-                      //               character = value;
-                      //             });
-                      //           },
-                      //         ),
-                      //       ),
-                      //       ListTile(
-                      //         title: const Text('GBP'),
-                      //         leading: Radio<SingingCharacter>(
-                      //           value: SingingCharacter.GBP,
-                      //           groupValue: character,
-                      //           onChanged: (SingingCharacter? value) {
-                      //             setState(() {
-                      //               character = value;
-                      //             });
-                      //           },
-                      //         ),
-                      //       ),
-                      //     ],
-                      //   ),
-                      // ),
+                      
                     ],
                   ),
                 ),
                 actions: [
-                  // TextButton(
-                  //   child: const Text('Send'),
-                  //   onPressed: () async {
-                  //     int? accountType;
-                  //     if (character == SingingCharacter.EUR) {
-                  //       debugPrint('_character 1');
-                  //       accountType = 1;
-                  //     }
-                  //     if (character == SingingCharacter.USD) {
-                  //       debugPrint('_character 2');
-                  //       accountType = 2;
-                  //     }
-                  //     if (character == SingingCharacter.GBP) {
-                  //       debugPrint('_character 3');
-                  //       accountType = 3;
-                  //     }
-                  //     if (idController.text.isEmpty ||
-                  //         toController.text.isEmpty ||
-                  //         valueController.text.isEmpty ||
-                  //         timeController.text.isEmpty ||
-                  //         accountType == null) {
-                  //       Fluttertoast.showToast(
-                  //           msg: "Please Fill all data",
-                  //           toastLength: Toast.LENGTH_SHORT,
-                  //           gravity: ToastGravity.BOTTOM,
-                  //           timeInSecForIosWeb: 1,
-                  //           backgroundColor: Colors.red,
-                  //           textColor: Colors.white,
-                  //           fontSize: 16.0);
-                  //     } else {
-                  //       await addItemToLocal(DetailsData(
-                  //           ammount: valueController.text,
-                  //           sent: sent,
-                  //           userName: toController.text,
-                  //           id: int.parse(idController.text),
-                  //           time: DateTime.parse(timeController.text),
-                  //           accountType: accountType,
-                  //           reference: int.parse(refController.text == ''
-                  //               ? '0'
-                  //               : refController.text),
-                  //           bankCode: bankCodeController.text,
-                  //           iBan: iBanCodeController.text));
-
-                  //       Navigator.pushReplacement(
-                  //           context,
-                  //           MaterialPageRoute(
-                  //             builder: (context) => const MainView(),
-                  //           ));
-                  //       Fluttertoast.showToast(
-                  //           msg: "Transaction is Added",
-                  //           toastLength: Toast.LENGTH_SHORT,
-                  //           gravity: ToastGravity.BOTTOM,
-                  //           timeInSecForIosWeb: 1,
-                  //           backgroundColor: Colors.green,
-                  //           textColor: Colors.white,
-                  //           fontSize: 16.0);
-                  //     }
-                  //   },
-                  // ),
+                
                   TextButton(
-                    child: const Text('تآكيد الاشتراك'),
+                    child: const Text('تآكيد الطلب'),
                     onPressed: () async {
                       // Navigator.pop(context);
                       ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
@@ -243,6 +112,7 @@ class _ChocoDetailesState extends State<ChocoDetailes> {
                             username: userName.text,
                             phone: phone.text,
                             email: email.text,
+                            det:det.text
                             // education: education.text,
                           ),
                           context);
@@ -255,7 +125,7 @@ class _ChocoDetailesState extends State<ChocoDetailes> {
             ),
           );
         },
-        child: const Text('اشترك'),
+        child: const Text('اطلب'),
       ),
       body: Padding(
         padding: const EdgeInsets.only(top: 50),
@@ -303,7 +173,7 @@ class _ChocoDetailesState extends State<ChocoDetailes> {
                 height: 10,
               ),
               Text(
-                'مقدمه عن الاشتراك',
+                'معلومات عن الفني',
                 style: Theme.of(context)
                     .textTheme
                     .bodyLarge

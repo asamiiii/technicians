@@ -54,7 +54,7 @@ class _LoginScreenState extends State<RegScreen> {
               ),
               const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: [Text('تطبيق تنظيم النوادي الرياضية')],
+                children: [Text('أحصل علي الفني لأصلاح أعطالك حالا')],
               ),
               const SizedBox(
                 height: 30,

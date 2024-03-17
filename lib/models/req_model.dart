@@ -3,7 +3,7 @@ class Requests {
   String? username;
   String? phone;
   String? email;
-  // String? age;
+  String? det;
   // String? education;
 
   Requests(
@@ -11,7 +11,7 @@ class Requests {
       this.username,
       this.email,
       this.phone,
-      // this.age,
+      this.det,
       // this.education
       });
 
@@ -20,7 +20,7 @@ class Requests {
       id: map['id'] ?? '',
       username: map['username'],
       phone: map['email'],
-      // age: map['age'],
+      det: map['det'],
       // education: map['education']
       );
   }
@@ -31,7 +31,7 @@ class Requests {
       'username': username,
       'phone': phone,
       'email': email,
-      // 'age': age,
+      'det': det,
       // 'education': education,
     };
   }
